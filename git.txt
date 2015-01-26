@@ -1,0 +1,117 @@
+git init
+
+git status
+
+git add octocat.txt   (add to staging area)
+  git status          (verify file added)
+
+git commit -m "Add octocat story"
+
+
+git add -A .          (the dot stands for the current directory, so everything in and beneath it is added)
+    (The -A ensures even file deletions are included.)
+
+git reset <filename> to remove a file or files from the staging area.
+
+git add '*.txt'       (add all the new files using a wildcard)
+
+git log --summary
+
+git remote add origin https://github.com/try-git/try_git.git
+    (Git doesn't care what you name your remotes, but it's typical to name your main one origin.)
+
+git push -u origin master   (-u tells Git to remember the parameters - next time we can simply run git push and Git will know what to do.)
+
+git pull origin master      (pull down any new changes)
+
+git stash                   (stash your changes)
+git stash apply             (re-apply your changes after your pull)
+
+git diff HEAD               (the diff of our most recent commit, HEAD = most recent)
+git diff --staged           (see the changes you just staged)
+
+git reset octofamily/octodog.txt    (unstage files by using 'git reset')
+
+git checkout -- octocat.txt     (Files can be changed back to how they were at the last commit by using the command: git checkout -- <target>)
+                                (-- promises the command line that there are no more options after the '--')
+
+
+git branch                    (shows all branches)
+
+git branch new_branch_name    (create new branch)
+
+git checkout new_branch_name  (switches to new_branch_name)
+
+git checkout -b new_branch    (creates new branch & switches directly to it)  (same as doing: git branch, git checkout)
+
+
+git rm -r folder_of_cats      (recursively remove all folders and files from the given directory.)
+
+git rm '*.txt'                (remove the files from disk - also stage the removal of the files)
+
+git commit -am "Delete stuff" (auto removes deleted files with the commit.)
+
+git merge clean_up            (merge branch)
+
+git branch -d <branch name>   (delete a branch)
+                              (-d won't let you delete something that hasn't been merged.)
+                              (-d -f forces the delete - if not already merged)
+                              (or -D to force the delete)
+
+
+git blame ./test/test_helper.rb   (returns a log of who did what & when)
+
+
+
+start new branch
+push branch
+pull request
+merge on github
+pull fresh master to local
+start new branch
+
+
+
+git remote -v     (checks origin)
+
+
+
+
+////////////////////////////////////////////////////////////////////////////
+Git Workflow if you are NOT the master branch -- according to Horace
+
+  Local in terminal: git add .
+  git commit -m “Message”
+  git push origin <name of branch>
+  Go to github & create a pull request
+  review changes with partner then merge while on github (green button)
+  Local in terminal: git checkout master
+  git pull origin master (local master branch)
+  git checkout new branch or switch back to previous branch
+
+
+Creating a git repo in the command-line and web
+  mkdir “name”	*create a directory in the terminal and cd into it. Add files to this directory
+  git init   	*creates empty git repo. It’s the communication channel b/t local and git hub
+    *create a README.md file either in text editor or command line.
+        *git creates the repo name for you based on directory name you created
+  gs          	*git status -- you’ll be on branch master and you’ll have untracked files
+  git add .   	*this will stage all the files to be committed. they appear in green (gs)
+  git commit -m “first commit”	*all the files are ready to be committed AND “master” branch is named
+  go to github webpage and create a repo
+  git remote add origin <<https://github/lori……...git>>
+  *copy and paste repo name from git repo creation in step 6
+      *sets the upstream branch.
+  git push -u origin master
+    * prompt for git username and password. -u sets the upstream for pull and status
+
+  For additional info: http://ryanflorence.com/git-for-beginners/
+
+
+Once master is set up
+  git add filename.rb (to add each file one at a time)
+  or git add . (add all files in directory at once)
+  gs 	check status to make sure the files are staged
+  git commit -m “your message”
+  git push (asks for username and password unless ssh keys are set up)
+  git checkout -b <new file name> will create a new branch

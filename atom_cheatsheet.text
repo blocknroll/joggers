@@ -1,0 +1,50 @@
+fuzzy finder = command + p
+  non-specific finder for files
+
+when you're stuck = hit Esc
+
+switch between specific tabs = command + number(1, 2, 3)
+
+toggle tree = command + \
+
+to split the pane = command + K, release, then direction
+
+to switch to a pane = command + K, then command + direction
+
+Movement:
+
+to jump to beginning of line = command + left
+to jump to the end of the line = command + right
+to jump to the top of the page = command + up
+to jump to the bottom of the page = command + down
+
+
+Select + Delete:
+delete to the right = Fn + delete
+delete entire line, regardless of location = Shift + Ctrl + k
+select an entire line, regardless of location = command + l
+select multiple lines = Shift + up or down
+select a single word = command + d
+select a multiple of the same word = command + d (repeat)
+to put cursor on multiple lines = command + click on spots
+
+Highlighting Gold Key = command + shift + direction
+to select everything = command + a
+
+to cut select line = command + x
+to paste selected line = command + v
+new line below current line, regardless of location = command + enter
+new line above current line = command + Shift + enter
+
+
+moving through line by word = Option/alt and left or right
+duplicating crap = command + shift + d
+
+indenting:
+comment out shortcut = command + /
+indenting 2 spaces, reglardless of location = command + ] or [
+
+finders:
+
+local finder = command + f (after that you can replace whatever you want)
+global finder = command + shift + f (find within entire project)

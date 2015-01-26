@@ -1,0 +1,200 @@
+ATOM
+
+    command n
+      creates a new tab in atom
+
+    command w
+      closes current tab (will prompt you to save if you haven't done so)
+
+    control tab
+      switches between open tabs
+
+    command number
+      goes immediately to that tab, 1 for left most tab, 2 for second left most, etc
+
+    command shift ] or command shift [
+      switches between open tabs
+
+    command } or command {
+      tabs the line or highlighted lines to the right or left
+
+    command z
+      undo
+
+    command y
+      redo
+
+    shift arrow keys
+      highlights text
+
+    shift command right
+      highlights all text from cursor to end of line
+
+    shift command left
+      highlights all text from cursor to beginning of line
+
+    command c
+      copies highlighted text
+
+    command x
+      cuts (deletes) highlighted text and places it into the clipboard
+
+    command v
+      pastes highlighted text at the cursor
+
+    control a
+      moves your cursor to the beginning of the line
+
+    control e
+      moves your cursor to the end of the line your on
+
+    command arrow keys
+      moves your cursor to the beginning or end of a line
+
+    option left
+      moves your cursor to the beginning of the previous word
+
+    option right
+      moves your cursor to the end of the next word
+
+    fn up arrow
+      scroll up one page
+
+    fn down arrow
+      scroll down one page
+
+    fn left arrow
+      scroll to the beginning of a document
+
+    fn right arrow
+      scroll to the end of a document
+
+    control k
+      deletes everything to the right of the cursor
+
+    command d
+      finds the next place you used the word your cursor is currently on.
+      repeatedly hitting it will highlight additional places the word was used
+      *very helpful if you need to find all the places you used a particular word
+
+    command /
+      comments out selected lines (adds a # to beginning of each line)
+
+    command \
+      opens/closes the sidebar
+
+    command k arrow
+      splits your screen
+
+    command + or command -
+      zooms in or out of your screen
+
+    command f
+      opens a window so you can find words or phrases
+      *esc will close the window
+
+    command s
+      saves file
+
+    command ,
+      opens settings
+
+    command option b
+      runs seeing is believing
+
+    command option v
+      removes seeing is believing code
+
+    control d or fn delete
+      deletes one space to the right
+
+
+
+
+ITERM
+
+    touch <filename>
+      creates a new file
+      *don't forget to specify what type of file (ex: .rb)
+      *use underscores to define spaces
+
+    mkdir <name>
+      creates a new directory
+
+    l or ls
+      lists the files in your current directory
+
+    ls -la
+      lists all files(including invisible ones) in your current directory
+
+    cd ..
+      takes you back one directory
+
+    cd <filename>
+      takes you to that file
+
+    cd ~/
+      takes you to your home directory
+
+    atom .
+      opens all the files in the current directory in atom
+
+    atom <filename>
+      opens that file in atom
+
+    ruby <filename>
+      runs that file
+
+    pry
+      gets you into a pry session
+
+    exit
+      gets you out of a pry session
+
+    control d
+      gets you out of a pry session or a loop
+
+    pwd
+      prints what directory you're in
+
+    clear
+      clears your screen
+
+    command r
+      clears your screen
+
+
+GENERAL OS X SHORTCUTS
+
+    command shift 3
+      captures the screen to a file on the desktop
+
+    command shift control 3
+      captures the screen to the clipboard
+
+    command shift 4
+      captures a selection of the screen to a file on the desktop or hit space bar to capture an entire window
+
+    commmand shift control 4
+      captures a selection of the screen to the clipboard or hit space bar to capture an entire window
+
+    command tab
+      move forward to next most recently used application in list of open applications
+
+    command shift tab
+      move backwards through a list of open applications sorted by most recently used
+
+    command f1
+      toggle mirror displays when external display is attached
+
+    command `
+      activate next open window in active application
+
+    command shift `
+      activate previous open window in active application
+
+    command m
+      minimizes active window to the dock
+
+    command w
+      closes active window
