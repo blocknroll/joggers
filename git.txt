@@ -62,6 +62,9 @@ git branch -d <branch name>   (delete a branch)
 git blame ./test/test_helper.rb   (returns a log of who did what & when)
 
 
+git rebase origin master
+
+
 
 start new branch
 push branch
