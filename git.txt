@@ -118,3 +118,9 @@ Once master is set up
   git commit -m “your message”
   git push (asks for username and password unless ssh keys are set up)
   git checkout -b <new file name> will create a new branch
+
+
+
+
+gitignore
+  db/example

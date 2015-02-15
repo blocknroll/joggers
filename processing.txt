@@ -1,0 +1,18 @@
+To draw a rectangle: rect(a,b,c,d);
+To draw an ellipse: ellipse(a,b,c,d);
+
+  a — X (horizontal) location of the shape's upper-left corner
+  b — Y (vertical) location of the shape's uppper-left corner
+  c — width of the shape
+  d — height of the shape
+
+
+Set the background color: background(r,g,b);
+Set the outline color: stroke(r,g,b);
+Set the interior color: fill(r,g,b);
+
+Don't forget, you need to call stroke() and fill() before you draw the shape!
+
+  r — amount of red, from 0 (none) to 255 (maximum)
+  g — amount of green, from 0 (none) to 255 (maximum)
+  b — amount of blue, from 0 (none) to 255 (maximum)

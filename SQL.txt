@@ -1,0 +1,52 @@
+Structured Query Language
+
+most data stored in PostgreSQL
+
+calculations might be done with Reddis
+Reddis could store the calcs for later
+
+
+must end statements with ;
+
+CAPITALS  = SQL commands
+lowers    = variables
+
+text:   unlimited chars
+string: limited chars
+
+
+* splat selects all
+
+
+CREATE TABLE table_name(id INTEGER PRIMARY KEY AUTOINCREMENT, attribute_one VARCHAR(31), attribute_two INT);
+
+INSERT INTO table_name(attribute_1, attribute_2) VALUES (value_1, value_2);
+INSERT INTO pets(name, owner_id) VALUES('fluffy', 1);
+
+SELECT * FROM table_name;
+SELECT * FROM table_name WHERE attribute=value;
+SELECT attribute_one FROM table_name WHERE attribute_two=value;
+
+DELETE FROM table_name WHERE attribute=value;
+DELETE FROM users WHERE name=Fred;
+
+UPDATE table_name SET attribute_one=value WHERE attribute_two=value;
+
+ALTER TABLE table_name ADD COLUMN new_attribute VARCHAR(40);
+
+SELECT * FROM table_name ORDER BY attribute;
+SELECT * FROM table_name ORDER BY attribute DESC;
+
+CREATE TABLE new_table_name....
+
+
+ORM
+object classes:   mapped to data tables in the database
+object instances: mapped to rows
+
+
+class User
+ make a 'user' table
+
+
+Sequel abstracts SQL

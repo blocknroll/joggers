@@ -1,0 +1,10 @@
+As a [user]
+When I [perform and action],
+And I [perform and action],
+And I [perform and action],
+Then [expected result].
+
+As a user,
+When I visit the home page,
+And I introduce the title and description of a task, And I click the submit button,
+Then my task is saved.

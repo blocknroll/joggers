@@ -1,0 +1,58 @@
+http://ruby.bastardsbook.com/chapters/html-parsing/
+
+
+
+gem install nokogiri
+
+
+> try these in pry
+
+# 1
+# ===================================
+require 'nokogiri'
+require 'open-uri'
+
+html = open('http://turing.io')
+doc  = Nokogiri::HTML(html)
+
+
+# 2
+# ===================================
+require 'nokogiri'
+require 'open-uri'
+
+html = open('http://turing.io')
+doc  = Nokogiri::HTML(html)
+
+images = doc.css('img')
+
+
+
+page.css('a').map do |a|
+  a['href']
+end
+
+
+# 3
+# ===================================
+require 'nokogiri'
+require 'open-uri'
+
+html = open('http://turing.io')
+doc  = Nokogiri::HTML(html)
+
+div   = doc.at_css('div')
+divs  = doc.css('div')
+
+
+# 4
+# ===================================
+require 'nokogiri'
+require 'open-uri'
+
+html = open('http://turing.io')
+doc  = Nokogiri::HTML(html)
+
+var1 = doc.css('.mod-intro')
+var2 = doc.css('.mod-intro p')
+var3 = doc.css('.mod-intro p').text
