@@ -1,3 +1,6 @@
+http://tutorials.jumpstartlab.com/topics/sql/fundamental_sql.html
+
+
 Structured Query Language
 
 most data stored in PostgreSQL

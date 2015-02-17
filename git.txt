@@ -124,3 +124,24 @@ Once master is set up
 
 gitignore
   db/example
+
+
+
+////////////////////////////////////////
+Switching remote URLs:
+
+1. first check the current remote:  (from your app's directory)
+  $ git remote -v
+    origin	git@github.com:turingschool-examples/skill-inventory-crud.git (fetch)
+    origin	git@github.com:turingschool-examples/skill-inventory-crud.git (push)
+
+2. create new repo on github
+    copy origin address for next step...
+
+3. reset remote origin:
+  $ git remote set-url origin git@github.com:blocknroll/skill-inventory-crud.git
+
+4. re-check the updated remote:  (now blocknroll, not turingschool)
+  $ git remote -v
+    origin	git@github.com:blocknroll/skill-inventory-crud.git (fetch)
+    origin	git@github.com:blocknroll/skill-inventory-crud.git (push)
